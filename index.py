@@ -7,14 +7,14 @@ from telegram.ext import Application, CommandHandler
 app = Flask(__name__)
 
 # Telegram bot token (use environment variable on Vercel)
-TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
+TELEGRAM_TOKEN = os.getenv('7786866951:AAGft4uQfnnLiMgOuE_ID3YF0mAF7S54OVk')
 
 # Create an instance of the bot
 application = Application.builder().token(TELEGRAM_TOKEN).build()
 
 # Define command handler for /start
 async def start(update: Update, context):
-    await update.message.reply_text("Welcome! This bot is running on webhooks.")
+    await update.message.reply_text("Fanz twitter tracker bot. just put an username (@xxx) to start tracking.")
 
 # Register /start handler
 application.add_handler(CommandHandler('start', start))
