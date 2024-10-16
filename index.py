@@ -7,7 +7,7 @@ from telegram.ext import Application, CommandHandler
 app = Flask(__name__)
 
 # Telegram bot token (use environment variable on Vercel)
-TELEGRAM_TOKEN = os.getenv('7786866951:AAGft4uQfnnLiMgOuE_ID3YF0mAF7S54OVk')
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 
 # Create an instance of the bot
 application = Application.builder().token(TELEGRAM_TOKEN).build()
